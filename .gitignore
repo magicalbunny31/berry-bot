@@ -1,15 +1,16 @@
-# » vscode 💻
-.vscode/
-*.code-workspace
+# 💻 vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
-# » cache 📁
-**/__pycache__
+# 🔐 secrets
+.env*
+.private*
+!.env
+!.env.sample
 
-# » databases 📦
-**/database/
-
-# » .env 📜
-.env
-
-# » pretty sacred file 📝
-info.txt
+# 📦 dependencies
+.venv

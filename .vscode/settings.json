@@ -1,0 +1,11 @@
+{
+   "python.analysis.ignore": [
+      "*"
+   ],
+   "cSpell.words": [
+      "ctx",
+      "issu",
+      "pycord",
+      "TZ"
+   ]
+}
