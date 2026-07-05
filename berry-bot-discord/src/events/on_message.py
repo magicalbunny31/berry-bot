@@ -14,7 +14,7 @@ class OnMessage(discord.Cog):
       if message.channel.id != gateway or message.author.id != mee6 or not message.content.endswith("berried off to another server. <:chimeCollapse:799670500636229673>"):
          return
 
-      await message.reply("https://www.youtube.com/watch?v=PqUenEMwsdQ")
+      await message.channel.send(content="https://www.youtube.com/watch?v=PqUenEMwsdQ", reference=message, allowed_mentions=discord.AllowedMentions(replied_user=False))
 
 
 def setup(bot: discord.Bot):
