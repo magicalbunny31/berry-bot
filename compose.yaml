@@ -3,12 +3,7 @@ services:
       build:
          context: ./berry-bot-discord/
          dockerfile: ./Dockerfile
-      container_name: berry-bot
-      deploy:
-         restart_policy:
-            condition: on-failure
-            delay: 2m
-            max_attempts: 3
+      container_name: berry-bot-discord
       develop:
          watch:
             - path: ./berry-bot-discord/
@@ -16,7 +11,9 @@ services:
             - path: ./package-lock.json
               action: rebuild
       environment:
-         TZ: Europe/London
+         TZ: "Europe/London"
+         PYTHONUNBUFFERED: "1"
       labels:
          com.fennec.app_type: discord
          com.fennec.app_name: berry-bot
+      restart: on-failure

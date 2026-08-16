@@ -6,6 +6,7 @@
       "ctx",
       "issu",
       "pycord",
+      "PYTHONUNBUFFERED",
       "TZ"
    ]
 }
